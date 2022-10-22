@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 14c3874d7f3b8274ab9d458def2249d7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - SkillIcon: {fileID: 21300000, guid: 322a0a34717ad7149b74daa8b5c3b4a4, type: 3}
+  - ProyectilPrefab: {fileID: 6538367339890165763, guid: 9190ec2111520154290dc1a5335fe601, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
