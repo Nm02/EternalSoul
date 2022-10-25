@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public abstract class MagicSkill : Skill
+public abstract class MagicSkill : Active_Skill
 {
     [SerializeField]int ManaCost;
     /*

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerSkillTeste : MonoBehaviour
 {
-    [SerializeField]SkillContainer skill;
+    [SerializeField] Active_Skill skill;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class PlayerSkillTeste : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            skill.Activate_Skill(gameObject);
+            skill.Use_Skill(gameObject);
         }
         
     }

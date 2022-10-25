@@ -47,5 +47,7 @@ MonoBehaviour:
   SkillIcon: {fileID: 21300000, guid: 322a0a34717ad7149b74daa8b5c3b4a4, type: 3}
   SkillName: Fire Ball
   SkillDescription: Lanza una bola de fuego
+  IsLocked: 0
   ManaCost: 0
-  ProyectilPrefab: {fileID: 6538367339890165763, guid: 9190ec2111520154290dc1a5335fe601, type: 3}
+  ProyectilPrefab: {fileID: 6538367339890165763, guid: 9190ec2111520154290dc1a5335fe601,
+    type: 3}

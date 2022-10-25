@@ -6,41 +6,71 @@ using UnityEngine.UI;
 
 public class SkillsInventory :MonoBehaviour
 {
-
-
-
-
     //Crear lista de Habilidades Activas
-    Skill[] ChosenSkills;
-    [SerializeField]MagicSkill[] MagicSkillList;
-    [SerializeField]GameObject SkillListPanel;
+    Active_Skill[] SelectedSkills=new Active_Skill[5];
+
+    //Crear inventarios de habilidades
+    [SerializeField] MagicSkill[] MagicSkillList;
+    [SerializeField] PhysicalSkill[] PhysicalSkillList;
+    [SerializeField] Holy_Skill[] HolySkillList;
+    [SerializeField] Cursed_Skill[] CursedSkillList;
+
+
     
 
 
-
-    //constructor
-
-    private void Start()
-    {
-
-    }
-
     //Setters
-    public void Set_ChosenSkills(int ChosenSkillsNumber, Skill ChosenSkills)
+    public void Set_ActiveSkill(Active_Skill SelectedSkills, int SelectedSkillNumber)
     {
-        this.ChosenSkills[ChosenSkillsNumber]= ChosenSkills;
+        this.SelectedSkills[SelectedSkillNumber] = SelectedSkills;
     }
 
     //Removers
-    public void Remove_ChosenSkills(int ChosenSkillsNumber)
+    public void Remove_ChosenSkills(int SelectedSkillsNumber)
     {
-        this.ChosenSkills[ChosenSkillsNumber]=null;
+        this.SelectedSkills[SelectedSkillsNumber]=null;
     }
 
     //Activates
-    public void Activate_Skill(int ChosenSkillsNumber)
+    public void Activate_Skill(int SelectedSkillsNumber)
     {
-        this.ChosenSkills[ChosenSkillsNumber].Use_Skill(gameObject);
+        this.SelectedSkills[SelectedSkillsNumber].Use_Skill(gameObject);
     }
-    
+
+    //Geters
+    public Active_Skill[] Get_SelectedSkills()
+    {
+        return this.SelectedSkills;
+    }
+    public MagicSkill[] Get_MagicSkillList()
+    {
+        return this.MagicSkillList;
+    }
+    public PhysicalSkill[] Get_PhysicalSkillList()
+    {
+        return this.PhysicalSkillList;
+    }
+    public Holy_Skill[] Get_HolySkillList()
+    {
+        return this.HolySkillList;
+    }
+    public Cursed_Skill[] Get_CursedSkillList()
+    {
+        return this.CursedSkillList;
+    }
+    public bool IsSelected(Active_Skill Skill)
+    {
+        
+        bool IsSelected = false;
+        for (int i = 0; i < SelectedSkills.Length; i++)
+        {
+            if (Skill == SelectedSkills[i])
+            {
+                IsSelected = true;
+            }
+        }
+        return IsSelected;
+    }
+
+
 }

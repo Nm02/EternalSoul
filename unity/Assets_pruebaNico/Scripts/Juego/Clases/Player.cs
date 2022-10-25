@@ -23,10 +23,6 @@ public class Player : Entity
     [SerializeField] int CurrentSkillPoints=0;
     [SerializeField] int TotalSkillPoints=0;
 
-    [SerializeField] Skill BasicAttack;
-
-    [SerializeField] Skill MainAttack;
-    [SerializeField] Skill SecondaryAttack;
     
     Animator anim;
 

@@ -1,0 +1,1 @@
+Los menus del proyecto estas planteados en la resolucion Full HD(1920X1080). Si funcionan con otras Resoluciones, pero no se ven de la forma optima.
