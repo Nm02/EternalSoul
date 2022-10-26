@@ -32,9 +32,13 @@ public class SkillsInventory :MonoBehaviour
     }
 
     //Activates
-    public void Activate_Skill(int SelectedSkillsNumber)
+    public void Activate_Skill(int SelectedSkillsNumber,GameObject Target = null)
     {
-        this.SelectedSkills[SelectedSkillsNumber].Use_Skill(gameObject);
+        if (this.SelectedSkills[SelectedSkillsNumber] != null)
+        {
+            this.SelectedSkills[SelectedSkillsNumber].Use_Skill(gameObject, Target);
+        }
+        
     }
 
     //Geters

@@ -34,7 +34,7 @@ public abstract class Active_Skill : Skill
     }
 
     //Abstracto Use_Skill
-    public  abstract void Use_Skill(GameObject Player);
+    public  abstract void Use_Skill(GameObject Player,GameObject Target);
     
 
 }

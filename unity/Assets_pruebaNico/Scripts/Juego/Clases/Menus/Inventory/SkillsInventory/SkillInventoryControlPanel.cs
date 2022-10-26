@@ -9,7 +9,7 @@ public class SkillInventoryControlPanel : MonoBehaviour
 
     [SerializeField] SelectedSkills_Panel PanelSelectedSkill;
 
-    [SerializeField] SkillsInventory SkillInventory;
+    SkillsInventory SkillInventory;
 
     GameObject MagicSkillInventoryBtn;
     GameObject PhysicalSkillInventoryBtn;
@@ -18,11 +18,11 @@ public class SkillInventoryControlPanel : MonoBehaviour
     GameObject PassiveSkillInvetoryBtn;
 
 
-    private void Start()
+    //Setters
+    public void Set_SkillInventory(SkillsInventory SkillInventory)
     {
-        Open();
+        this.SkillInventory = SkillInventory;
     }
-
 
 
     //Particular voids 

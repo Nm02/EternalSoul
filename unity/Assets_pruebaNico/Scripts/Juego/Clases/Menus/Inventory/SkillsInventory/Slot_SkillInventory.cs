@@ -18,7 +18,6 @@ public class Slot_SkillInventory : MonoBehaviour
     }
     public void Set_SlotSkill(Active_Skill NewSkill =null)
     {
-        print("SI");
         if (NewSkill != null) 
         {
             this.Skill = NewSkill;
