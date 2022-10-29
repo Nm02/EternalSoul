@@ -120,11 +120,6 @@ public class Panel_SkillList : MonoBehaviour
             print("Habilidad ya seleccionada");
         }
         
-
-        
-
-        
-
     }
     void Empty_SlotBtn_OnClick()
     {
